@@ -1,13 +1,13 @@
-import { ChevronRight, CreditCard, Smartphone, QrCode, Barcode } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 import { EditableAmount } from "./EditableAmount";
-import { PixIcon } from "./PixIcon";
+import { BarcodeIcon, CardIcon, PhoneIcon, PixIcon, QrIcon } from "./icons";
 
 const actions = [
   { icon: PixIcon, label: "Área Pix e Transferir" },
-  { icon: Barcode, label: "Pagar" },
-  { icon: QrCode, label: "Pagar com Pix QR code" },
-  { icon: Smartphone, label: "Recarga de celular" },
+  { icon: BarcodeIcon, label: "Pagar" },
+  { icon: QrIcon, label: "Pagar com Pix QR code" },
+  { icon: PhoneIcon, label: "Recarga de celular" },
 ];
 
 export function BalanceSection() {
@@ -28,7 +28,7 @@ export function BalanceSection() {
         {actions.map(({ icon: Icon, label }) => (
           <button key={label} type="button" className="flex flex-col items-center gap-3">
             <span className="grid aspect-square w-full place-items-center rounded-full bg-surface">
-              <Icon className="size-6" strokeWidth={1.8} />
+              <Icon className="size-6" />
             </span>
             <span className="text-center text-[13px] leading-tight font-semibold">
               {label}
@@ -41,7 +41,7 @@ export function BalanceSection() {
         type="button"
         className="mt-7 flex w-full items-center gap-4 rounded-lg bg-surface px-5 py-5 text-left"
       >
-        <CreditCard className="size-6 shrink-0" strokeWidth={1.8} />
+        <CardIcon className="size-6 shrink-0" />
         <span className="text-[15px] font-semibold">Meus cartões</span>
       </button>
     </section>
