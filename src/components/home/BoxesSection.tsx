@@ -33,7 +33,7 @@ export function BoxesSection() {
           />
           <p className="mt-3 text-[15px] font-semibold">MOTO</p>
           <p className="mt-0.5 flex items-center gap-1.5 text-[15px]">
-            R$ 0,09
+            <EditableAmount value="0,09" label="Editar valor da Caixinha MOTO" />
             <TriangleIcon className="size-2.5 fill-up text-up" />
           </p>
         </article>
@@ -48,7 +48,9 @@ export function BoxesSection() {
             className="aspect-square w-full rounded-md object-cover ring-2 ring-brand"
           />
           <p className="mt-3 text-[15px] font-semibold">Futuro</p>
-          <p className="mt-0.5 text-[15px] text-subtle">R$ 0,00</p>
+          <p className="mt-0.5 text-[15px] text-subtle">
+            <EditableAmount value="0,00" label="Editar valor da Caixinha Futuro" />
+          </p>
         </article>
 
         <article className="w-[38%] shrink-0">
