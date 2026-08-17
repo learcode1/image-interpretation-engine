@@ -39,7 +39,7 @@ export function BoxesSection() {
         id: `caixinha-${Date.now()}`,
         name: "Nova caixinha",
         amount: "0,00",
-        image: images[prev.length % images.length],
+        image: images[prev.length % images.length] ?? boxMoto,
       },
     ]);
 
