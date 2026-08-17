@@ -1,5 +1,8 @@
 import { ChevronRight, TriangleIcon } from "lucide-react";
 
+import { EditableAmount } from "./EditableAmount";
+
+
 import boxFuturo from "@/assets/box-futuro.jpg";
 import boxKeys from "@/assets/box-keys.jpg";
 import boxMoto from "@/assets/box-moto.jpg";

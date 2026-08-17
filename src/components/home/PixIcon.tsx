@@ -1,5 +1,6 @@
 type PixIconProps = {
   className?: string;
+  strokeWidth?: number;
 };
 
 export function PixIcon({ className }: PixIconProps) {
