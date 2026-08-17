@@ -1,7 +1,10 @@
-import { ChevronRight, CreditCard, Smartphone, QrCode, Barcode, Diamond } from "lucide-react";
+import { ChevronRight, CreditCard, Smartphone, QrCode, Barcode } from "lucide-react";
+
+import { EditableAmount } from "./EditableAmount";
+import { PixIcon } from "./PixIcon";
 
 const actions = [
-  { icon: Diamond, label: "Área Pix e Transferir" },
+  { icon: PixIcon, label: "Área Pix e Transferir" },
   { icon: Barcode, label: "Pagar" },
   { icon: QrCode, label: "Pagar com Pix QR code" },
   { icon: Smartphone, label: "Recarga de celular" },
@@ -17,7 +20,9 @@ export function BalanceSection() {
         <span className="text-xl font-bold tracking-tight">Saldo em conta</span>
         <ChevronRight className="size-6 shrink-0 text-subtle" strokeWidth={2} />
       </button>
-      <p className="mt-1 text-xl">R$ 44,33</p>
+      <p className="mt-1 text-xl">
+        <EditableAmount value="44,33" label="Editar saldo em conta" />
+      </p>
 
       <div className="mt-8 grid grid-cols-4 gap-2">
         {actions.map(({ icon: Icon, label }) => (

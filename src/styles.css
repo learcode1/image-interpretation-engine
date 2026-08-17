@@ -68,7 +68,8 @@
   --color-hairline: var(--hairline);
   --color-up: var(--up);
   --color-subtle: var(--subtle);
-  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    "Inter", "Graphik", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
