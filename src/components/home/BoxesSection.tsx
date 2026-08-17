@@ -16,7 +16,9 @@ export function BoxesSection() {
           <span className="text-xl font-bold tracking-tight">Total em Caixinhas</span>
           <ChevronRight className="size-6 shrink-0 text-subtle" strokeWidth={2} />
         </button>
-        <p className="mt-1 text-xl">R$ 0,09</p>
+        <p className="mt-1 text-xl">
+          <EditableAmount value="0,09" label="Editar total em Caixinhas" />
+        </p>
       </div>
 
       <div className="mt-7 flex gap-4 overflow-x-auto pb-1 [&>*:first-child]:ml-6 [&>*:last-child]:mr-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
