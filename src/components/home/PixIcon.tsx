@@ -20,7 +20,7 @@ export function PixIcon({ className }: PixIconProps) {
         <path d="M22.1 12c0 .3-.1.6-.3.8l-3.2 3.2c-.1-.6-.4-1.1-.8-1.5L15.3 12l2.5-2.5c.4-.4.7-.9.8-1.5l3.2 3.2c.2.2.3.5.3.8Z" />
       </g>
       {/* Losango central */}
-      <path d="M12 9.9 14.1 12 12 14.1 9.9 12 12 9.9Z" />
+      <path d="M12 9.2 14.8 12 12 14.8 9.2 12 12 9.2Z" />
     </svg>
   );
 }
