@@ -16,8 +16,8 @@ export function BoxesSection() {
         <p className="mt-1 text-xl">R$ 0,09</p>
       </div>
 
-      <div className="mt-7 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-        <article className="w-[38%] shrink-0 snap-start">
+      <div className="mt-7 flex gap-4 overflow-x-auto px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <article className="w-[38%] shrink-0">
           <img
             src={boxMoto}
             alt="Caixinha MOTO"
@@ -33,7 +33,7 @@ export function BoxesSection() {
           </p>
         </article>
 
-        <article className="w-[38%] shrink-0 snap-start">
+        <article className="w-[38%] shrink-0">
           <img
             src={boxFuturo}
             alt="Caixinha Futuro"
@@ -46,7 +46,7 @@ export function BoxesSection() {
           <p className="mt-0.5 text-[15px] text-subtle">R$ 0,00</p>
         </article>
 
-        <article className="w-[38%] shrink-0 snap-start">
+        <article className="w-[38%] shrink-0">
           <div className="grid aspect-square w-full grid-rows-2 gap-1.5 overflow-hidden rounded-md ring-2 ring-brand">
             <img
               src={boxKeys}

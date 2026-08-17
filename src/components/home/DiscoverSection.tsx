@@ -21,11 +21,11 @@ export function DiscoverSection() {
     <section className="pt-7 pb-8">
       <h2 className="px-6 text-xl font-bold tracking-tight">Descubra mais</h2>
 
-      <div className="mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mt-6 flex gap-4 overflow-x-auto px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {cards.map((card) => (
           <article
             key={card.title}
-            className="w-[70%] shrink-0 snap-start overflow-hidden rounded-lg bg-surface"
+            className="w-[70%] shrink-0 overflow-hidden rounded-lg bg-surface"
           >
             <img
               src={card.image}
