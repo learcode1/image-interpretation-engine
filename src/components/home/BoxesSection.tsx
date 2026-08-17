@@ -16,7 +16,7 @@ export function BoxesSection() {
         <p className="mt-1 text-xl">R$ 0,09</p>
       </div>
 
-      <div className="mt-7 flex gap-4 overflow-x-auto px-6 pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mt-7 flex gap-4 overflow-x-auto pb-1 [&>*:first-child]:ml-6 [&>*:last-child]:mr-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <article className="w-[38%] shrink-0">
           <img
             src={boxMoto}
