@@ -2,13 +2,12 @@
   command = "npm run build"
   publish = ".output/public"
 
-[functions]
-  node_bundler = "esbuild"
-  directory = ".output/server"
-
 [[redirects]]
   from = "/*"
-  to = "/.netlify/functions/index"
+  to = "/index.html"
   status = 200
+
+
+
 
 
