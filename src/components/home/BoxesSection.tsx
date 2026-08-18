@@ -50,7 +50,7 @@ export function BoxesSection() {
         {boxes.map((box) => {
           const positive = parseAmount(box.amount) > 0;
           return (
-            <article key={box.id} className="w-[38%] shrink-0">
+            <article key={box.id} className="w-[32%] shrink-0">
               <div className="relative">
                 <img
                   src={box.image}
@@ -58,7 +58,8 @@ export function BoxesSection() {
                   loading="lazy"
                   width={640}
                   height={640}
-                  className="aspect-square w-full rounded-md object-cover ring-2 ring-brand"
+                  className="aspect-square w-full rounded-md object-cover"
+                  style={{ border: '2px solid #012147' }}
                 />
               </div>
               <p className="mt-3 text-[15px] font-semibold">
@@ -83,8 +84,8 @@ export function BoxesSection() {
         })}
 
 
-        <article className="w-[38%] shrink-0">
-          <div className="grid aspect-square w-full grid-rows-2 gap-1.5 overflow-hidden rounded-md ring-2 ring-brand">
+        <article className="w-[32%] shrink-0">
+          <div className="grid aspect-square w-full grid-rows-2 gap-1.5 overflow-hidden rounded-md" style={{ border: '2px solid #012147' }}>
             <img
               src={boxKeys}
               alt=""
