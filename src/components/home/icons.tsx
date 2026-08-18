@@ -1,21 +1,19 @@
+import pixSvg from '/icons/pix.svg';
+import escudoPng from '/icons/escudo.png';
+
 type IconProps = { className?: string };
 
-/** Símbolo do Pix: quatro losangos arredondados em contorno. */
+/** Símbolo do Pix: importado de pix.svg */
 export function PixIcon({ className }: IconProps) {
   return (
-    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true" focusable="false" className={className}>
-      <g
-        stroke="currentColor"
-        strokeWidth={2.6}
-        strokeLinejoin="round"
-        strokeLinecap="round"
-      >
-        <path d="M24 4.6l6.2 6.2a4 4 0 0 1 0 5.6L24 22.6l-6.2-6.2a4 4 0 0 1 0-5.6L24 4.6Z" />
-        <path d="M24 25.4l6.2 6.2a4 4 0 0 1 0 5.6L24 43.4l-6.2-6.2a4 4 0 0 1 0-5.6L24 25.4Z" />
-        <path d="M4.6 24l6.2-6.2a4 4 0 0 1 5.6 0L22.6 24l-6.2 6.2a4 4 0 0 1-5.6 0L4.6 24Z" />
-        <path d="M43.4 24l-6.2 6.2a4 4 0 0 1-5.6 0L25.4 24l6.2-6.2a4 4 0 0 1 5.6 0L43.4 24Z" />
-      </g>
-    </svg>
+    <img 
+      src={pixSvg} 
+      alt="Pix" 
+      aria-hidden="true" 
+      focusable="false" 
+      className={className}
+      style={{ width: '100%', height: '100%' }}
+    />
   );
 }
 
