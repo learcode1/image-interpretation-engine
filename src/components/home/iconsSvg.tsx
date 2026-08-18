@@ -17,10 +17,15 @@ export function ShieldIcon({ className }: IconProps) {
     <img 
       src={escudoPng} 
       alt="Escudo de Segurança" 
-      aria-hidden="true" 
-      focusable="false" 
+      aria-hidden="true"
       className={className}
-      style={{ width: '100%', height: '100%' }}
+      style={{ 
+        width: 'currentColor', 
+        height: 'auto',
+        objectFit: 'contain',
+        objectPosition: 'center',
+        display: 'block'
+      }}
     />
   );
 }
