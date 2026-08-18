@@ -8,17 +8,7 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/.netlify/functions/index"
   status = 200
 
-[context.production]
-  command = "npm run build"
-  publish = ".output/public"
 
-[context.deploy-preview]
-  command = "npm run build"
-  publish = ".output/public"
-
-[context.branch-deploy]
-  command = "npm run build"
-  publish = ".output/public"
