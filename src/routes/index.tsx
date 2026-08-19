@@ -7,7 +7,7 @@ import { BoxesSection } from "@/components/home/BoxesSection";
 import { DiscoverSection } from "@/components/home/DiscoverSection";
 import { ShopSection } from "@/components/home/ShopSection";
 
-const title = "Minha conta — banco digital no seu bolso";
+const title = "Nubank";
 const description =
   "Veja saldo, Caixinhas, cartões, Pix e ofertas em uma única tela escura feita para o celular.";
 
