@@ -199,11 +199,6 @@ body {
   body {
     padding-top: env(safe-area-inset-top, 0px);
     padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-}
-
-@media (display-mode: standalone) {
-  body {
-    padding-top: 50px !important;
+    box-sizing: border-box;
   }
 }
