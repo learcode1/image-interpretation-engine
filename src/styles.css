@@ -174,3 +174,19 @@
     color: var(--color-foreground);
   }
 }
+
+html {
+  background: #591E8C;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: #591E8C;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
