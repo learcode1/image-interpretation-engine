@@ -188,3 +188,10 @@ body {
 #root {
   min-height: 100dvh;
 }
+
+/* PWA iPhone — respeita Dynamic Island / notch */
+@supports (padding-top: env(safe-area-inset-top)) {
+  #root {
+    padding-top: env(safe-area-inset-top);
+  }
+}
