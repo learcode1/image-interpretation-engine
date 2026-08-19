@@ -25,14 +25,15 @@ export const Route = createFileRoute("/")({
 
 function Index() {
   return (
-    <main className="mx-auto min-h-screen max-w-md bg-background font-sans text-foreground">
+    <main className="mx-auto min-h-screen max-w-md bg-background font-sans text-foreground px-4">
       <AccountHeader />
+      <div className="h-[2px] bg-hairline" />
       <BalanceSection />
-      <div className="h-px bg-hairline" />
+      <div className="h-[2px] bg-hairline mt-2" />
       <BoxesSection />
-      <div className="h-px bg-hairline" />
+      <div className="h-[2px] bg-hairline mt-2" />
       <ShopSection />
-      <div className="h-px bg-hairline" />
+      <div className="h-[2px] bg-hairline mt-2" />
       <DiscoverSection />
       <div className="flex justify-center pt-4 pb-12">
         <button

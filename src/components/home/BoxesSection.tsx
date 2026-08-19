@@ -35,22 +35,22 @@ export function BoxesSection() {
 
 
   return (
-    <section className="pt-7 pb-8">
+    <section className="pt-5 pb-5">
       <div className="px-6">
         <button type="button" className="flex w-full items-center justify-between gap-4 text-left">
-          <span className="text-xl font-bold tracking-tight">Total em Caixinhas</span>
-          <ChevronRight className="size-6 shrink-0 text-subtle" strokeWidth={2} />
+          <span className="text-base font-semibold tracking-tight">Total em Caixinhas</span>
+          <ChevronRight className="size-5 shrink-0 text-subtle" strokeWidth={2} />
         </button>
-        <p className="mt-1 text-xl">
-          <EditableAmount value={total} readOnly label="Total em Caixinhas" />
+        <p className="mt-1 text-lg font-medium">
+          R$ {total}
         </p>
       </div>
 
-      <div className="mt-7 flex gap-4 overflow-x-auto pb-1 [&>*:first-child]:ml-6 [&>*:last-child]:mr-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="mt-5 flex gap-3 overflow-x-auto pb-1 [&>*:first-child]:ml-4 [&>*:last-child]:mr-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {boxes.map((box) => {
           const positive = parseAmount(box.amount) > 0;
           return (
-            <article key={box.id} className="w-[32%] shrink-0">
+            <article key={box.id} className="w-[30%] shrink-0">
               <div className="relative">
                 <img
                   src={box.image}
@@ -62,7 +62,7 @@ export function BoxesSection() {
                   style={{ border: '2px solid #012147' }}
                 />
               </div>
-              <p className="mt-3 text-[15px] font-semibold">
+              <p className="mt-2 text-[13px] font-semibold">
                 <EditableText
                   value={box.name}
                   label={`Editar nome da Caixinha ${box.name}`}
@@ -70,21 +70,21 @@ export function BoxesSection() {
                 />
               </p>
               <p
-                className={`mt-0.5 flex items-center gap-1.5 text-[15px] ${positive ? "" : "text-subtle"}`}
+                className={`mt-0.5 flex items-center gap-1 text-[13px]`}
               >
                 <EditableAmount
                   value={box.amount}
                   label={`Editar valor da Caixinha ${box.name}`}
                   onValueChange={(amount) => updateBox(box.id, { amount })}
                 />
-                {positive ? <TriangleIcon className="size-2.5 fill-up text-up" /> : null}
+                {positive ? <TriangleIcon className="size-2 fill-up text-up" /> : null}
               </p>
             </article>
           );
         })}
 
 
-        <article className="w-[32%] shrink-0">
+        <article className="w-[30%] shrink-0">
           <div className="grid aspect-square w-full grid-rows-2 gap-1.5 overflow-hidden rounded-md" style={{ border: '2px solid #012147' }}>
             <img
               src={boxKeys}
@@ -103,7 +103,7 @@ export function BoxesSection() {
               className="size-full object-cover"
             />
           </div>
-          <p className="mt-3 text-[15px] font-semibold">Acessar todas</p>
+          <p className="mt-2 text-[13px] font-semibold">Acessar todas</p>
         </article>
       </div>
     </section>
