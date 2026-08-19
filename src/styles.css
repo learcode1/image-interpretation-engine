@@ -175,12 +175,18 @@
   }
 }
 
+html,
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
 html {
   background: #591E8C;
 }
 
 body {
-  margin: 0;
   min-height: 100dvh;
   background: #591E8C;
 }
@@ -189,9 +195,15 @@ body {
   min-height: 100dvh;
 }
 
-/* PWA iPhone — respeita Dynamic Island / notch */
-@supports (padding-top: env(safe-area-inset-top)) {
-  #root {
-    padding-top: env(safe-area-inset-top);
+@media (display-mode: standalone) {
+  body {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}
+
+@media (display-mode: standalone) {
+  body {
+    padding-top: 50px !important;
   }
 }
